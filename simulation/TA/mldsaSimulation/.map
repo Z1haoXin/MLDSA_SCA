@@ -1,0 +1,280 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+                              project.o (__aeabi_lmul)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 vector.o
+ .data          0x0000000000000000        0x0 vector.o
+ .bss           0x0000000000000000        0x0 vector.o
+ .text          0x0000000000000000        0x0 project.o
+ .data          0x0000000000000000        0x0 project.o
+ .bss           0x0000000000000000        0x0 project.o
+ .text.rand2bytes
+                0x0000000000000000       0x22 project.o
+ .text.print2bytes
+                0x0000000000000000       0x22 project.o
+ .text.rand4bytes
+                0x0000000000000000       0x36 project.o
+ .text.print4bytes
+                0x0000000000000000       0x36 project.o
+ .text.read4bytes
+                0x0000000000000000       0x36 project.o
+ .text.read8bytes
+                0x0000000000000000       0x5e project.o
+ .text.print8bytes
+                0x0000000000000000       0x5e project.o
+ .text.encode   0x0000000000000000       0x7c project.o
+ .data          0x0000000000000000        0x0 /tmp/ccZg4xy4.o
+ .bss           0x0000000000000000        0x0 /tmp/ccZg4xy4.o
+ .data          0x0000000000000000        0x0 elmoasmfunctions.o
+ .bss           0x0000000000000000        0x0 elmoasmfunctions.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x0000000008000000 0x0000000000010000 xr
+ram              0x0000000020000000 0x0000000000002000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD vector.o
+LOAD project.o
+LOAD /tmp/ccZg4xy4.o
+LOAD elmoasmfunctions.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+END GROUP
+
+.text           0x0000000008000000      0x5a8
+ *(.vectors)
+ .vectors       0x0000000008000000       0xc0 vector.o
+                0x0000000008000000                vector_table
+ *(.text*)
+ .text.blocking_handler
+                0x00000000080000c0        0x2 vector.o
+                0x00000000080000c0                rtc_isr
+                0x00000000080000c0                tim7_isr
+                0x00000000080000c0                blocking_handler
+                0x00000000080000c0                tsc_isr
+                0x00000000080000c0                spi1_isr
+                0x00000000080000c0                i2c1_isr
+                0x00000000080000c0                tim17_isr
+                0x00000000080000c0                i2c2_isr
+                0x00000000080000c0                usart1_isr
+                0x00000000080000c0                usart3_4_isr
+                0x00000000080000c0                tim1_cc_isr
+                0x00000000080000c0                exti2_3_isr
+                0x00000000080000c0                tim16_isr
+                0x00000000080000c0                pvd_isr
+                0x00000000080000c0                rcc_isr
+                0x00000000080000c0                flash_isr
+                0x00000000080000c0                hard_fault_handler
+                0x00000000080000c0                tim14_isr
+                0x00000000080000c0                spi2_isr
+                0x00000000080000c0                usb_isr
+                0x00000000080000c0                tim15_isr
+                0x00000000080000c0                tim3_isr
+                0x00000000080000c0                usart2_isr
+                0x00000000080000c0                adc_comp_isr
+                0x00000000080000c0                dma1_channel1_isr
+                0x00000000080000c0                tim6_dac_isr
+                0x00000000080000c0                tim1_brk_up_trg_com_isr
+                0x00000000080000c0                dma1_channel2_3_isr
+                0x00000000080000c0                exti4_15_isr
+                0x00000000080000c0                cec_can_isr
+                0x00000000080000c0                wwdg_isr
+                0x00000000080000c0                tim2_isr
+                0x00000000080000c0                dma1_channel4_5_isr
+                0x00000000080000c0                exti0_1_isr
+ .text.null_handler
+                0x00000000080000c2        0x2 vector.o
+                0x00000000080000c2                null_handler
+                0x00000000080000c2                sv_call_handler
+                0x00000000080000c2                pend_sv_handler
+                0x00000000080000c2                sys_tick_handler
+                0x00000000080000c2                nmi_handler
+ .text.reset_handler
+                0x00000000080000c4       0x7c vector.o
+                0x00000000080000c4                reset_handler
+ .text.read2bytes
+                0x0000000008000140       0x22 project.o
+ *fill*         0x0000000008000162        0x2 
+ .text.decode   0x0000000008000164       0x90 project.o
+                0x0000000008000164                decode
+ .text.main     0x00000000080001f4      0x174 project.o
+                0x00000000080001f4                main
+ .text          0x0000000008000368      0x108 /tmp/ccZg4xy4.o
+                0x0000000008000368                PQCLEAN_MLDSA44_CLEAN_montgomery_reduce
+                0x00000000080003e8                PQCLEAN_MLDSA44_CLEAN_reduce32
+                0x000000000800041e                PQCLEAN_MLDSA44_CLEAN_caddq
+                0x0000000008000444                PQCLEAN_MLDSA44_CLEAN_freeze
+ .text          0x0000000008000470       0xda elmoasmfunctions.o
+                0x0000000008000470                starttrigger
+                0x0000000008000482                endtrigger
+                0x0000000008000494                readbyte
+                0x00000000080004a2                LoadN
+                0x00000000080004b4                randbyte
+                0x00000000080004c6                getstart
+                0x00000000080004d8                getruncount
+                0x00000000080004ea                printbyte
+                0x00000000080004f8                endprogram
+                0x0000000008000506                initialisemaskflow
+                0x0000000008000516                resetmaskflow
+                0x0000000008000528                setmaskflowstart
+                0x0000000008000538                resetdatafile
+ *fill*         0x000000000800054a        0x2 
+ .text          0x000000000800054c       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+                0x000000000800054c                __aeabi_lmul
+                0x000000000800054c                __muldi3
+                0x00000000080005a8                . = ALIGN (0x4)
+ *(.rodata*)
+                0x00000000080005a8                . = ALIGN (0x4)
+
+.glue_7         0x00000000080005a8        0x0
+ .glue_7        0x00000000080005a8        0x0 linker stubs
+
+.glue_7t        0x00000000080005a8        0x0
+ .glue_7t       0x00000000080005a8        0x0 linker stubs
+
+.vfp11_veneer   0x00000000080005a8        0x0
+ .vfp11_veneer  0x00000000080005a8        0x0 linker stubs
+
+.v4_bx          0x00000000080005a8        0x0
+ .v4_bx         0x00000000080005a8        0x0 linker stubs
+
+.iplt           0x00000000080005a8        0x0
+ .iplt          0x00000000080005a8        0x0 vector.o
+
+.rel.dyn        0x00000000080005a8        0x0
+ .rel.iplt      0x00000000080005a8        0x0 vector.o
+
+.preinit_array  0x00000000080005a8        0x0
+                0x00000000080005a8                . = ALIGN (0x4)
+                0x00000000080005a8                __preinit_array_start = .
+ *(.preinit_array)
+                0x00000000080005a8                __preinit_array_end = .
+
+.init_array     0x00000000080005a8        0x0
+                0x00000000080005a8                . = ALIGN (0x4)
+                0x00000000080005a8                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                0x00000000080005a8                __init_array_end = .
+
+.fini_array     0x00000000080005a8        0x0
+                0x00000000080005a8                . = ALIGN (0x4)
+                0x00000000080005a8                __fini_array_start = .
+ *(.fini_array)
+ *(SORT_BY_NAME(.fini_array.*))
+                0x00000000080005a8                __fini_array_end = .
+
+.ARM.extab
+ *(.ARM.extab*)
+
+.ARM.exidx      0x00000000080005a8        0x0
+                0x00000000080005a8                __exidx_start = .
+ *(.ARM.exidx*)
+                0x00000000080005a8                __exidx_end = .
+                0x00000000080005a8                . = ALIGN (0x4)
+                0x00000000080005a8                _etext = .
+
+.data           0x0000000020000000        0x0 load address 0x00000000080005a8
+                0x0000000020000000                _data = .
+ *(.data*)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+                0x00000000080005a8                _data_loadaddr = LOADADDR (.data)
+
+.igot.plt       0x0000000020000000        0x0 load address 0x00000000080005a8
+ .igot.plt      0x0000000020000000        0x0 vector.o
+
+.bss            0x0000000020000000        0x0 load address 0x00000000080005a8
+ *(.bss*)
+ *(COMMON)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _ebss = .
+
+/DISCARD/
+ *(.eh_frame)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                end = .
+                0x0000000020002000                PROVIDE (_stack = (ORIGIN (ram) + LENGTH (ram)))
+OUTPUT(project.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x0000000000000000      0xb01
+ .debug_info    0x0000000000000000      0x2d1 vector.o
+ .debug_info    0x00000000000002d1      0x3ff project.o
+ .debug_info    0x00000000000006d0      0x431 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_abbrev   0x0000000000000000      0x36c
+ .debug_abbrev  0x0000000000000000      0x12a vector.o
+ .debug_abbrev  0x000000000000012a      0x107 project.o
+ .debug_abbrev  0x0000000000000231      0x13b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_loc      0x0000000000000000      0x2b5
+ .debug_loc     0x0000000000000000       0xee vector.o
+ .debug_loc     0x00000000000000ee      0x1c7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_aranges  0x0000000000000000       0xc0
+ .debug_aranges
+                0x0000000000000000       0x30 vector.o
+ .debug_aranges
+                0x0000000000000030       0x70 project.o
+ .debug_aranges
+                0x00000000000000a0       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_ranges   0x0000000000000000       0xb0
+ .debug_ranges  0x0000000000000000       0x20 vector.o
+ .debug_ranges  0x0000000000000020       0x60 project.o
+ .debug_ranges  0x0000000000000080       0x30 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_line     0x0000000000000000      0x53c
+ .debug_line    0x0000000000000000       0xf9 vector.o
+ .debug_line    0x00000000000000f9      0x315 project.o
+ .debug_line    0x000000000000040e      0x12e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_str      0x0000000000000000      0x9fa
+ .debug_str     0x0000000000000000      0x285 vector.o
+                                        0x2be (size before relaxing)
+ .debug_str     0x0000000000000285      0x1d7 project.o
+                                        0x2a5 (size before relaxing)
+ .debug_str     0x000000000000045c      0x59e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+                                        0x62c (size before relaxing)
+
+.comment        0x0000000000000000       0xa3
+ .comment       0x0000000000000000       0x70 vector.o
+                                         0x71 (size before relaxing)
+ .comment       0x0000000000000070       0x33 project.o
+                                         0x34 (size before relaxing)
+ .comment       0x00000000000000a3       0x34 /tmp/ccZg4xy4.o
+ .comment       0x00000000000000a3       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.ARM.attributes
+                0x0000000000000000       0x2f
+ .ARM.attributes
+                0x0000000000000000       0x31 vector.o
+ .ARM.attributes
+                0x0000000000000031       0x2c project.o
+ .ARM.attributes
+                0x000000000000005d       0x2c /tmp/ccZg4xy4.o
+ .ARM.attributes
+                0x0000000000000089       0x21 elmoasmfunctions.o
+ .ARM.attributes
+                0x00000000000000aa       0x2c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+
+.debug_frame    0x0000000000000000      0x1ec
+ .debug_frame   0x0000000000000000       0x40 vector.o
+ .debug_frame   0x0000000000000040      0x178 project.o
+ .debug_frame   0x00000000000001b8       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
