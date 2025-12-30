@@ -16,18 +16,18 @@
 ```
 ### 2. run the code
 Capturing traces from ChipWhisperer, and then store the ``.h5`` files of traces and datasets in ./Trace.
-#### 2.1 building templates for $\bm{s_1}$ and $\bm{x}$
+#### 2.1 building templates for $\{s_1}$ and $\{x}$
 run
 ```
 python3 template_build_s.py
 python3 template_build_x.py
 ```
-to build HW template for $\bm{s_1}$ and $\bm{x}$.
+to build HW template for $\{s_1}$ and $\{x}$.
 
-#### 2.2 Template matching for $\bm{s_1}$ and $\bm{x}$
+#### 2.2 Template matching for $\{s_1}$ and $\{x}$
 run
 ```
 python3 template_attack_s.py
 python3 template_attack_x.py
 ```
-to match the HW results for $\bm{s_1}$ and $\bm{x}$, the results will be stored in ./match_res.
+to match the HW results for $\{s_1}$ and $\{x}$, the results will be stored in ./match_res.
