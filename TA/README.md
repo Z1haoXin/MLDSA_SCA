@@ -1,4 +1,4 @@
-## Template attack agianst $\bm{s_1}$ and $\bm{x}$
+## Template attack agianst $\{s_1}$ and $\{x}$
 
 ### 1. Repository Structure
 ```
